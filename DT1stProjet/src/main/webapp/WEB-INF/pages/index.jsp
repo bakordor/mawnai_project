@@ -41,7 +41,7 @@
   </div>
 </div>
 <div class="container">
-  <h2>Image Gallery</h2>
+  <h2>Most Popular Car</h2>
   FEATURES VEHICLES
   <div class="row">
     <div class="col-md-4">
@@ -52,14 +52,32 @@
     </div>
     <div class="col-md-4">
       <a href="swft.jpg" class="thumbnail">
-        <p>Maruti suzuki swift.</p>
-        <img src="resources/images/swft.jpg" alt="car" style="width:180px;height:150px">
+        <p>FORD.</p>
+        <img src="resources/images/f2.jpg" alt="car" style="width:180px;height:150px">
       </a>
     </div>
     <div class="col-md-4">
       <a href="cinqueterre.jpg" class="thumbnail">
         <p>Audi</p>
         <img src="resources/images/Audi.jpg" alt="car" style="width:180px;height:150px">
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="cinqueterre.jpg" class="thumbnail">
+        <p>audi</p>
+        <img src="resources/images/audi1.jpg" alt="car" style="width:180px;height:150px">
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="cinqueterre.jpg" class="thumbnail">
+        <p>audi</p>
+        <img src="resources/images/audi2.jpg" alt="car" style="width:180px;height:150px">
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="cinqueterre.jpg" class="thumbnail">
+        <p>audi</p>
+        <img src="resources/images/audi3.jpg" alt="car" style="width:180px;height:150px">
       </a>
     </div>
   </div>

@@ -21,7 +21,7 @@
 
             <div class="form-group">
                 <label for="category">Category</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="instrument" />Instrument</label>
+                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="cars" />Cars</label>
                 <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="record" />Record</label>
                 <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="accessory" />Accessory</label>
             </div>
@@ -37,17 +37,7 @@
                 <form:input path="productPrice" id="price" class="form-Control" />
             </div>
 
-            <div class="form-group">
-                <label for="condition">Condition</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition" value="new" />New</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition" value="used" />Used</label>
-            </div>
 
-            <div class="form-group">
-                <label for="status">Status</label>
-                <label class="checkbox-inline"><form:radiobutton path="productStatus" id="status" value="active" />Active</label>
-                <label class="checkbox-inline"><form:radiobutton path="productStatus" id="status" value="inactive" />Inactive</label>
-            </div>
 
             <div class="form-group">
                 <label for="unitInStock">Unit In Stock</label>

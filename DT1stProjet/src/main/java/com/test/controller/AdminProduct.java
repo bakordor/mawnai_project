@@ -34,9 +34,8 @@ public class AdminProduct {
     @RequestMapping("/product/addProduct")
     public String addProduct(Model model){
         Product product = new Product();
-        product.setProductCategory("instrument");
-        product.setProductCondition("new");
-        product.setProductStatus("active");
+        product.setProductCategory("cars");
+      
 
         model.addAttribute("product", product);
 
@@ -54,7 +53,7 @@ public class AdminProduct {
 
         MultipartFile productImage = product.getProductImage();
         String rootDirectory = request.getSession().getServletContext().getRealPath("/");
-        path = Paths.get(rootDirectory + "/WEB-INF/resources/images/" + product.getProductId() + ".png");
+        path = Paths.get(rootDirectory + "/resources/images/" + product.getProductId() + ".png");
 
         if(productImage != null && !productImage.isEmpty()){
             try {
@@ -64,7 +63,7 @@ public class AdminProduct {
                 throw new RuntimeException("Product image saving failed", ex);
             }
         }
-
+        productService.editProduct(product);
         return "redirect:/admin/productInventory";
     }
 
@@ -88,8 +87,8 @@ public class AdminProduct {
 
         MultipartFile productImage = product.getProductImage();
         String rootDirectory = request.getSession().getServletContext().getRealPath("/");
-        path = Paths.get(rootDirectory + "/WEB-INF/resources/images/" + product.getProductId() + ".png");
-
+        path = Paths.get(rootDirectory + "/resources/images/" + product.getProductId() + ".png");
+        System.out.println(path);
         if(productImage != null && !productImage.isEmpty()){
             try {
                 productImage.transferTo(new File(path.toString()));

@@ -11,6 +11,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>the car store</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet"
@@ -93,30 +96,27 @@
 				
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<!--Default buttons with dropdown menu-->
-				<ul class="nav navbar-nav">
-					<li class="dropdown"><a class="dropdown-toggle" type="button"
-						data-toggle="dropdown" href="#"> HOME <span class="caret"></span>
-					</a>
-						<ul class="dropdown-menu">
-
-							
-							 <li><a href="<c:url value="/product/productList/all" />">Products</a></li>
-							
-
-						</ul></li>
 			
-			<ul class="nav navbar-nav">
-					<li class="dropdown"><a class="dropdown-toggle" type="button"
-						data-toggle="dropdown" href="#"> ABOUT <span class="caret"></span>
-					</a>
-				<ul class="dropdown-menu">
-				<li><a href="#">contacts</a></li>
-		
-               </ul>
 			
-			</ul></li>
+							 <div class="dropdown">
+						 <button class="dropdown-toggle" type="button" data-toggle="dropdown">HOME
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+   <li><a href="<c:url value="/product/productList/all" />">Products</a></li>
+   
+    </ul>
+    
+    </div>
 			
 
+							 <div class="dropdown">
+						 <button class="dropdown-toggle" type="button" data-toggle="dropdown">ABOUT
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+   <li><a href="#">Contact_US</a></li>
+   
+    </ul></div>
+    
 				<ul class="nav navbar-nav navbar-right">
 
 					<c:if test="${pageContext.request.userPrincipal.name == null}">
@@ -146,6 +146,6 @@
 			</form>
 		</form>-->
 		</nav>
-</nav>
+
 </body>
 </html>
