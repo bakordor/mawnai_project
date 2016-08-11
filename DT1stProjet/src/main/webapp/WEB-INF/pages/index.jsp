@@ -41,7 +41,7 @@
   </div>
 </div>
 <div class="container">
-  <h2>Most Popular Car</h2>
+  <h2>New Arrivals</h2>
   FEATURES VEHICLES
   <div class="row">
     <div class="col-md-4">
